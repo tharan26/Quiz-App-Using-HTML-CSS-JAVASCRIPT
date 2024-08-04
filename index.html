@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Quest</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Quiz</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="rightbar">
+            <i class="fa-solid fa-user"></i>
+        </nav>
+    </header>
+    <main>
+        <div class="quiz-container">
+            <h1>Quiz Quest</h1>
+            <form id="quiz-form">
+                <div class="question-box">
+                    <h3>1. What does HTML stand for?</h3>
+                    <label><input type="radio" name="question0" value="HyperText Markup Language"> HyperText Markup Language</label>
+                    <label><input type="radio" name="question0" value="HighText Machine Language"> HighText Machine Language</label>
+                    <label><input type="radio" name="question0" value="Hyperlink and Text Markup Language"> Hyperlink and Text Markup Language</label>
+                    <label><input type="radio" name="question0" value="Home Tool Markup Language"> Home Tool Markup Language</label>
+                </div>
+                <div class="question-box">
+                    <h3>2. What does CSS stand for?</h3>
+                    <label><input type="radio" name="question1" value="Creative Style Sheets"> Creative Style Sheets</label>
+                    <label><input type="radio" name="question1" value="Cascading Style Sheets"> Cascading Style Sheets</label>
+                    <label><input type="radio" name="question1" value="Computer Style Sheets"> Computer Style Sheets</label>
+                    <label><input type="radio" name="question1" value="Colorful Style Sheets"> Colorful Style Sheets</label>
+                </div>
+                <div class="question-box">
+                    <h3>3. What is the programming language used for web development?</h3>
+                    <label><input type="radio" name="question2" value="Python"> Python</label>
+                    <label><input type="radio" name="question2" value="Java"> Java</label>
+                    <label><input type="radio" name="question2" value="JavaScript"> JavaScript</label>
+                    <label><input type="radio" name="question2" value="C++"> C++</label>
+                </div>
+                <div class="question-box">
+                    <h3>4. In which year was the first website published?</h3>
+                    <label><input type="radio" name="question3" value="1989"> 1989</label>
+                    <label><input type="radio" name="question3" value="1991"> 1991</label>
+                    <label><input type="radio" name="question3" value="1995"> 1995</label>
+                    <label><input type="radio" name="question3" value="2000"> 2000</label>
+                </div>
+                <div class="question-box">
+                    <h3>5. Which JavaScript method is used to select an element by its ID?</h3>
+                    <label><input type="radio" name="question4" value="querySelector"> querySelector</label>
+                    <label><input type="radio" name="question4" value="getElementsByClassName"> getElementsByClassName</label>
+                    <label><input type="radio" name="question4" value="getElementById"> getElementById</label>
+                    <label><input type="radio" name="question4" value="getElementsByTagName"> getElementsByTagName</label>
+                </div>
+                <div class="question-box">
+                    <h3>6. Which method is used to print a message to the web console in JavaScript?</h3>
+                    <label><input type="radio" name="question5" value="alert"> alert</label>
+                    <label><input type="radio" name="question5" value="console.log"> console.log</label>
+                    <label><input type="radio" name="question5" value="print"> print</label>
+                    <label><input type="radio" name="question5" value="write"> write</label>
+                </div>
+                <div class="question-box">
+                    <h3>7. Which language is used to style web pages?</h3>
+                    <label><input type="radio" name="question6" value="HTML"> HTML</label>
+                    <label><input type="radio" name="question6" value="CSS"> CSS</label>
+                    <label><input type="radio" name="question6" value="JavaScript"> JavaScript</label>
+                    <label><input type="radio" name="question6" value="Python"> Python</label>
+                </div>
+                <div class="question-box">
+                    <h3>8. What does HTTP stand for?</h3>
+                    <label><input type="radio" name="question7" value="HyperText Transfer Protocol"> HyperText Transfer Protocol</label>
+                    <label><input type="radio" name="question7" value="HyperText Transfer Program"> HyperText Transfer Program</label>
+                    <label><input type="radio" name="question7" value="HyperText Transmission Protocol"> HyperText Transmission Protocol</label>
+                    <label><input type="radio" name="question7" value="HyperText Transfer Page"> HyperText Transfer Page</label>
+                </div>
+                <div class="question-box">
+                    <h3>9. What is the DOM in web development?</h3>
+                    <label><input type="radio" name="question8" value="Data Object Model"> Data Object Model</label>
+                    <label><input type="radio" name="question8" value="Document Object Model"> Document Object Model</label>
+                    <label><input type="radio" name="question8" value="Digital Object Model"> Digital Object Model</label>
+                    <label><input type="radio" name="question8" value="Display Object Model"> Display Object Model</label>
+                </div>
+                <div class="question-box">
+                    <h3>10. What is the main focus of HTML, CSS, and JavaScript?</h3>
+                    <label><input type="radio" name="question9" value="Game Development"> Game Development</label>
+                    <label><input type="radio" name="question9" value="Mobile App Development"> Mobile App Development</label>
+                    <label><input type="radio" name="question9" value="Web Development"> Web Development</label>
+                    <label><input type="radio" name="question9" value="Data Science"> Data Science</label>
+                </div>
+                <button type="button" onclick="resetQuiz()">Reset</button>
+                <button type="button" onclick="submitQuiz()">Submit</button>
+            </form>
+        </div>
+    </main>
+    <div class="foot2">
+    <footer>
+        <h3>CONNECT</h3>
+        <ul>
+            <li><a href="">INSTAGRAM</a></li>
+            <li><a href="">LINKEDIN</a></li>
+            <li><a href="">X</a></li>
+        </ul>
+    </footer>
+    </div>
+</body>
+</html>
